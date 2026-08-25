@@ -23,6 +23,7 @@ function calculate(firstValue, secondValue, chosenOperator) {
 }
 
 const soundFiles = {
+	"0": "Oh.mp3",
 	"1": "1.mp3",
 	"2": "2.mp3",
 	"3": "3.mp3",
@@ -31,7 +32,15 @@ const soundFiles = {
 	"6": "6.mp3",
 	"7": "7.mp3",
 	"8": "8.mp3",
-	"9": "9.mp3"
+	"9": "9.mp3",
+	".": "Oof.mp3",
+	"+": "More.mp3",
+	"-": "Less.mp3",
+	"*": "hyuk.mp3",
+	"/": "Hmm.mp3",
+	"=": "AhhYeah.mp3",
+	"C": "Ahhh.mp3",
+	"Back": "UhOh.mp3"
 };
 
 function playButtonSound(buttonText) {
