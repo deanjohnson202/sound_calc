@@ -22,9 +22,17 @@ function calculate(firstValue, secondValue, chosenOperator) {
 	}
 }
 
+function playButtonSound(buttonText) {
+	if (buttonText === "1") {
+		const sound = new Audio("sounds/1.mp3");
+		sound.play();
+	}
+}
+
 buttons.forEach(function (button) {
 	button.addEventListener("click", function () {
 		const buttonText = button.textContent;
+		playButtonSound(buttonText);
 
 		if (buttonText >= "0" && buttonText <= "9") {
 			if (waitingForSecondNumber) {
