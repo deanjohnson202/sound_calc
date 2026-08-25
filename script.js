@@ -7,7 +7,7 @@ buttons.forEach(function (button) {
 
 		if (buttonText >= "0" && buttonText <= "9") {
 			if (display.value === "0") {
-				dislay.value = buttonText;
+				display.value = buttonText;
 			} else {
 				display.value = display.value + buttonText;
 			}
