@@ -22,9 +22,23 @@ function calculate(firstValue, secondValue, chosenOperator) {
 	}
 }
 
+const soundFiles = {
+	"1": "1.mp3",
+	"2": "2.mp3",
+	"3": "3.mp3",
+	"4": "4.mp3",
+	"5": "5.mp3",
+	"6": "6.mp3",
+	"7": "7.mp3",
+	"8": "8.mp3",
+	"9": "9.mp3"
+};
+
 function playButtonSound(buttonText) {
-	if (buttonText === "1") {
-		const sound = new Audio("sounds/1.mp3");
+	const soundFile = soundFiles[buttonText];
+	
+	if (soundFile) {
+		const sound = new Audio("sounds/" + soundFile);
 		sound.play();
 	}
 }
