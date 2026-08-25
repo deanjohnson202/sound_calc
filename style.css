@@ -30,5 +30,5 @@ button {
 	cursor: pointer;
 }
 .zero {
-	gri-column: span 3;
+	grid-column: span 3;
 }
