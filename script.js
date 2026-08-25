@@ -12,5 +12,24 @@ buttons.forEach(function (button) {
 				display.value = display.value + buttonText;
 			}
 		}
+
+		if (buttonText === ".") {
+			if (!display.value.includes(".")) {
+				display.value = display.value + ".";
+			}
+		}
+
+		if (buttonText === "C") {
+			display.value = "0";
+		}
+
+		if (buttonText === "Back") {
+			if (display.value.length > 1) {
+				display.value = display.value.slice(0, -1);
+			} else {
+				display.value = "0";
+			}
+		}
+			
 	});
 });
