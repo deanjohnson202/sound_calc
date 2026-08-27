@@ -32,3 +32,8 @@ button {
 .zero {
 	grid-column: span 3;
 }
+.credit {
+	margin: 20px auto;
+	font-size: 14px;
+	color: #9aa0a6;
+}
